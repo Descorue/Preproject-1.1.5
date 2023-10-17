@@ -5,12 +5,10 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.SessionFactory;
 
-import java.sql.SQLException;
-
 
 public class Main {
-    //private final static UserService userService = new UserServiceImpl();
-    private final static UserServiceImpl userServiceHiberImpl = new UserServiceImpl();
+
+    private final static UserService userServiceHiberImpl = new UserServiceImpl();
 
     public static void main(String[] args) {
         SessionFactory sessionFactory = Util.getSessionFactory();
